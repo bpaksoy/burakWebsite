@@ -1,0 +1,30 @@
+{
+  "name": "burak",
+  "version": "1.0.0",
+  "description": "Paksoy Proje Yonetimi",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "insaat",
+    "proje",
+    "design",
+    "construction",
+    "interior",
+    "design",
+    "ic",
+    "mimari",
+    "yapi",
+    "yonetimi"
+  ],
+  "author": "banu yilmaz",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "knex": "^0.13.0",
+    "pg": "^7.3.0"
+  }
+}

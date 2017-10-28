@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+#logo {
+  float: left;
+  display: inline-block;
+}
+
+
+#navigation {
+  background-color: #0072BB;
+  background-image: url("building.jpg");
+  height: 150px;
+  overflow: hidden;
+  background-color: #333;
+  /*position: fixed; /* Set the navbar to fixed position */*/
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+   -moz-box-shadow: 0 8px 6px -6px #999;
+   box-shadow: 0 8px 6px -6px #999;
+
+}
+
+/*.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}*/
+
+#logo3 {
+  padding-top: 15px;
+}
+
+#stickyFooter {
+  /*background-color:#BB2F38;*/
+  background-color:	#1C3442;
+   margin-top: 25px;
+
+   padding-top:25px;
+   -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+}
+
+#stockphoto {
+   border: 1px solid black;
+  }
+
+#stockphoto4 {
+  margin-bottom: 100px;
+}
+
+#contact{
+  color: black;
+}
+
+#contact2{
+  color: black;
+}
+
+#contactCard {
+  float:left;
+  clear:left;
+}
