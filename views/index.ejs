@@ -20,14 +20,15 @@
           </div>
            <br>
           <div class="col s10">
-            <div class="col s2">
-              <a href="/" class="brand-logo" style="display:flex">Paksoy Proje Yonetimi </a>
+            <div class="col s1">
+              <a href="/" class="brand-logo" style="display:flex"> <h2>Paksoy Proje</h2></a>
             </div>
-           <div class="col s8">
+           <div class="col s9">
              <ul id="nav-mobile" class="right hide-on-med-and-down">
                <li><a href="/projects">Projelerimiz</a></li>
                <li><a href="/about_us">Hakkimizda</a></li>
                <li><a href="/contact">Bize Ulasin</a></li>
+              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
              </ul>
            </div>
 
@@ -38,6 +39,18 @@
 
       </div>
     </nav>
+<script>
+  function myFunction() {
+      var x = document.getElementById("navigation");
+      if (x.idName === "navigation") {
+          x.className += " responsive";
+      } else {
+          x.idName = "navigation";
+      }
+  }
+  </script>
+
+
     <br> <br>  <br><br> <br>
    <h2 class="w3-center"></h2>
 
@@ -68,6 +81,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
+
 </script>
  <br>  <br> <br> <br>
    <footer  id="stickyFooter" class="page-footer">
