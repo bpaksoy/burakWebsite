@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <title>Paksoy Insaat</title>
+  </head>
+  <body>
+    <nav>
+      <div id="navigation" class="nav-wrapper">
+
+        <div class="row">
+          <div class="col s2">
+              <img id="logo3" src="logo3.png" alt="paksoy"/>
+          </div>
+           <br>
+          <div class="col s10">
+            <div class="col s1">
+              <a href="/" class="brand-logo" style="display:flex"> <h2>Paksoy Proje</h2></a>
+            </div>
+           <div class="col s9">
+             <ul id="nav-mobile" class="right hide-on-med-and-down">
+               <li><a href="/projects">Projelerimiz</a></li>
+               <li><a href="/about_us">Hakkimizda</a></li>
+               <li><a href="/contact">Bize Ulasin</a></li>
+              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+             </ul>
+           </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </nav>
+<script>
+  function myFunction() {
+      var x = document.getElementById("navigation");
+      if (x.idName === "navigation") {
+          x.className += " responsive";
+      } else {
+          x.idName = "navigation";
+      }
+  }
+  </script>
+
+
+    <br> <br>  <br><br> <br>
+   <h2 class="w3-center"></h2>
+
+  <div class="w3-content w3-display-container">
+    <img id="stockphoto" class="mySlides" src="stockphoto1.jpg" style="width:100%">
+    <img id="stockphoto" class="mySlides" src="stockphoto2.jpg" style="width:100%">
+    <img id="stockphoto" class="mySlides" src="stockphoto3.jpg" style="width:100%">
+    <img id="stockphoto" class="mySlides" src="stockphoto2.jpg" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+</script>
+ <br>  <br> <br> <br>
+   <footer  id="stickyFooter" class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Paksoy Proje Yonetimi</h5>
+                <p class="grey-text text-lighten-4">Paksoy Proje Yonetimi @2017</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Banu Yilmaz
+
+            </div>
+          </div>
+        </footer>
+   <script
+   src="https://code.jquery.com/jquery-3.2.1.min.js"
+   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+   crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  </body>
+</html>

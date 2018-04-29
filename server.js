@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 8000;
 
-const ejs = require('ejs');
-app.set('view engine', 'ejs');
+// const ejs = require('ejs');
+// app.set('view engine', 'ejs');
 
 const bodyParser = require('body-parser');
-app.use( express.static( "public" ));
+app.use(express.static( "public" ));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
